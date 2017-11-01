@@ -1,0 +1,21 @@
+body {
+  background-color: grey;
+}
+
+
+h1 {
+  color: green;
+}
+
+h2 {
+  color: sans-serif;
+}
+
+ul {
+  background-color: orange;
+}
+
+#subheader {
+  font-style: lightgrey;
+  font-weight: 500
+}
