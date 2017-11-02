@@ -1,8 +1,35 @@
-body {
-  background-color: grey;
+.container {
+  max-width: 750px;
+  margin: 10px auto;
 }
 
+.navigation {
+  padding:10px;
+  background-color: lightgrey;
+}
 
+.header {
+margin: 50px;
+padding: 50px;
+  background: white;
+}
+
+.content {
+border: 5px dotted hotpink;
+  padding: 55px;
+  margin: 50px;
+  backgorund-color: lightgreen;
+}
+
+.footer{
+  backgorund-color: darkgrey;
+}
+
+body {
+  background-color: hotpink;
+  text-align: center;
+  margin:  0;
+}
 h1 {
   color: green;
 }
