@@ -6,32 +6,62 @@
 .navigation {
   padding:10px;
   background-color: lightgrey;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
 }
 
-.header {
-margin: 50px;
-padding: 50px;
-  background: white;
+.navigation > ul > li {
+  margin: 5px;
+  display: inline;
+  position: relative;
+}
+
+.navigation > ul > li:hover {
+  background-color: chocolate;
+}
+
+.navigation .dropdown {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  display: none;
+}
+
+.dropdown:hover {
+  display: block;
+}
+
+.navigation a:hover + .dropdown,
+.navigation .dropdown:hover {
+  display: block;
+}
+
+.header{
+  margin: 50px;
+  padding: 50px;
+  background-color: white;
 }
 
 .content {
-border: 5px dotted hotpink;
+border: 5px dotted blue;
   padding: 55px;
   margin: 50px;
-  backgorund-color: lightgreen;
+  background-color: grey;
 }
 
 .footer{
-  backgorund-color: darkgrey;
+  background-color: darkgrey;
 }
 
 body {
-  background-color: hotpink;
+  background-color: red;
   text-align: center;
   margin:  0;
 }
 h1 {
-  color: green;
+  color: brown;
 }
 
 h2 {
@@ -39,10 +69,39 @@ h2 {
 }
 
 ul {
-  background-color: orange;
+  background-color: white;
 }
 
 #subheader {
   font-style: lightgrey;
   font-weight: 500
+}
+
+
+#funky-list {
+  background-color: tomato;
+}
+
+#funky-list > li:first-child {
+  background-color: blue;
+}
+
+#funky-list > li:last-child {
+  background-color: lawngreen;
+}
+
+#funky-list > li:nth-child(2) {
+  background-color: red;
+}
+
+#funky-list > li:nth-child(3n) {
+  background-color: cyan;
+}
+
+#funky-list > li:nth-child(2n+1) {
+  background-color: violet;
+}
+
+#funky-list > li:hover {
+  background-color: yellow;
 }
