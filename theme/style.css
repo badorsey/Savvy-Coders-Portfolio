@@ -24,7 +24,7 @@
 
 .navigation .dropdown {
   position: absolute;
-  top: 20px;
+  top: 17px;
   right: 0;
   display: none;
 }
@@ -45,10 +45,11 @@
 }
 
 .content {
+width: auto;
 border: 5px dotted blue;
   padding: 55px;
-  margin: 50px;
-  background-color: grey;
+  margin: 200px;
+  background-color: red;
 }
 
 .footer{
@@ -104,4 +105,12 @@ ul {
 
 #funky-list > li:hover {
   background-color: yellow;
+}
+
+label {
+  color: blue;
+}
+
+input[type='text']{
+  background-color: blue;
 }
