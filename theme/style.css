@@ -41,7 +41,7 @@
 .header{
   margin: 50px;
   padding: 50px;
-  background-color: white;
+
 }
 
 .content {
@@ -57,7 +57,7 @@ border: 5px dotted blue;
 }
 
 body {
-  background-color: red;
+  background-image: url("http://wallsdesk.com/wp-content/uploads/2016/02/black-abstract-wallpapers-10.jpg");
   text-align: center;
   margin:  0;
 }
@@ -66,7 +66,15 @@ h1 {
 }
 
 h2 {
-  color: sans-serif;
+  color: hotpink;
+}
+
+h3 {
+    color: white;
+}
+
+h4 {
+    color: blue;
 }
 
 ul {
@@ -77,6 +85,13 @@ ul {
   font-style: lightgrey;
   font-weight: 500
 }
+
+#output{
+  color: #708090;
+  font-size: 25px;
+
+}
+
 
 
 #funky-list {
@@ -112,5 +127,5 @@ label {
 }
 
 input[type='text']{
-  background-color: blue;
+  background-color: lightgrey;
 }

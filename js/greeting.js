@@ -1,17 +1,21 @@
-var hello = "hello";
-var originalName = prompt( "Whats your name?" );
+/* globals $ */
 
-var checkUserName = function checkUserName( userName ){
-    if( !userName || userName == " " ){
-        userName = prompt( "What's your name, for real this time?" );
+$( "#input" ).on(
+    "keyup",
+    ( event ) => {
+        var value = $( event.target ).val();
+        var $subheader = $( "#subheader" );
 
-        checkUserName( userName );
+        $subheader.html( "<h3>Your Wish is my command " + value + "</h3>" );
     }
-    else{
-        originalName = userName;
-    }
-};
+);
 
-checkUserName( originalName );
+$( ".list ul" ).on( "mouseenter", "li", ( event ) => {
+    $( event.target ).css( "background-color", "yellow" );
+} );
 
-document.querySelector( "#subheader" ).textContent = "Hello, " + originalName;
+$( ".list ul" ).on( "mouseleave", "li", ( event ) => {
+    $( event.target ).css( "background-color", "transparent" );
+} );
+
+$( "h1" ).on( "dblclick", ( event ) => event.target.textContent = "I've been clicked twice" );
