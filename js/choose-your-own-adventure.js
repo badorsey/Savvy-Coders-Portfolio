@@ -1,15 +1,15 @@
 /* eslint-disable no-use-before-define */
 var story = {
     "start": {
-        "text": "In the beginnning the DEVIL created pizza, by seven years of age I rejected it. Will you eat the forbideen pizza with by replying with a yes or stay righteous and just say no rebuking this greasy devil's food?",
+        "text": "In the beginnning the DEVIL created pizza, by the ripe age of seven I rejected it. Will you eat the forbideen pizza by replying with a YES or stay righteous and just say NO, rebuking this greasy devil's food?",
         "choices": [ "yes", "no" ]
     },
     "yes": {
-        "text": "You then fail into the sunken place of Eternal Stinch which knocks at the doorway to the gates of Waffle House. Will you order the runny egg or the burnt bacon to provide your body with protein and the runs, choose your poison by replying the word bacon or egg?",
+        "text": "You then fall into the sunken place of Eternal Stinch, which knocks at the doorway to the firey gates of the Waffle House. Will you order the runny EGG or the burnt BACON, providing your body with protein but a stomach ache. Choose your poison, will it be BACON or EGG?",
         "choices": [ "bacon", "egg", "wine" ]
     },
     "no": {
-        "text": "You may proceed pass go to the Golden Girl's house to have a drink with Dorothy and Blanch. From here you can chose to drink the Red Wine. Reply with the answer wine to drink the heavenly beverage?",
+        "text": "You may proceed pass go to the Golden Girl's house and have a drink with Dorothy and Blanch. From here you can chose to drink the Red Wine. Reply with the answer WINE to drink the heavenly beverage?",
         "choices": [ "wine" ]
     },
 
@@ -29,7 +29,7 @@ var story = {
 function validateChoice( choice, choices ){
     var isValidChoice = false;
 
-    choices.forEach( validChoice ) => {
+    choices.forEach( ( validChoice ) => {
         if( choice === validChoice ){
             isValidChoice = true;
         }
@@ -41,7 +41,7 @@ function validateChoice( choice, choices ){
 function handleChoices( chapter, branch ){
     var choice = prompt( chapter.text );
 
-    if( chapter.choices.some(( validChoice ) => choice === validChoice )
+    if( chapter.choices.some( ( validChoice ) => choice === validChoice ) ){
         runStory( choice );
     }
     else{

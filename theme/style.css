@@ -46,7 +46,7 @@
 
 .content {
 width: auto;
-border: 5px dotted blue;
+border: 5px;
   padding: 55px;
   margin: 00px;
   background-color: red;
@@ -62,7 +62,7 @@ body {
   margin:  0;
 }
 h1 {
-  color: brown;
+  color: blue;
 }
 
 h2 {
